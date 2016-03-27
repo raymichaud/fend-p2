@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A portfolio site developed for the Udacity Front End Web Developer program [P2]">
+    <title>Portfolio - Ray A Michaud</title>
+    <link href="https://fonts.googleapis.com/css?family=Average+Sans|Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/skeleton.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="row header">
+        <div class="three columns">
+          <!--
+          I wanted to include the logo as an inline SVG
+          SVG logo created in Corel Draw
+          SVG optimized at http://petercollingridge.appspot.com/svg-optimiser
+          Style class [fil0] was taken out of the svg element and moved to stylesheet
+          I researched accessibility for SVG because there is no "alt" attribute for fallback purposes. I followed these tips: http://www.sitepoint.com/tips-accessible-svg/
+          -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="115" height="115" viewBox="0 0 819 819" role="img">
+            <title>Logo</title>
+            <desc>An orange circular logo with a letter R cut out from the circle</desc>
+            <path class="fil0" d="M410 0c226 0 409 183 409 410 0 226-183 409-409 409C183 819 0 636 0 410 0 183 183 0 410 0zm-48 355c-5 44-32 73-32 74-2 22 10 7-2 41-6 13-8 26-15 40-22 53-57 110-121 72-60-36 13-109 45-134 16-14 114-90 125-93zm9 54c14-57 6-88 70-110 36-12 109-41 137-8 80 92-157 117-207 118zm388 92c-33 72-32 107-98 168-167 157-423 125-545-49C-70 356 152 0 471 53c344 59 418 570 78 536-55-5-128-72-157-110-44-59-32-42 23-52 41-7 68-14 108-25 63-18 144-87 69-143-46-35-153 30-197 50 12-33 41-90 68-114 16-14 94-74 95-87-48 6-143 114-159 160-28 78-92 112-158 160-55 41-147 134-56 186 80 46 139-98 163-144 7 7 22 35 36 49 42 45 91 91 157 96 91 8 172-31 218-114zM30 434c12 212 195 368 405 355 211-12 366-196 354-405C777 173 593 18 384 30 174 42 17 226 30 434z">
+          </svg>
+        </div>
+        <div class="nine columns title">
+          <h1>Ray A Michaud</h1>
+          <h3>using both halves of my brain</h3>
+        </div>
+      </header>
+      <section class="row hero" title="Hero Graphic">
+        <!--
+        The hero graphic, as well as the other raster images, was created in Corel PhotoPaint
+        Hero graphic spells out "Ray A Michaud Portfolio " in hexidecimal notation
+        -->
+        <div class="twelve columns">
+          <img src="images/hero.jpg" alt="hero graphic">
+        </div>
+      </section>
+      <section title="Main Content">
+        <div class="row">
+          <div class="twelve columns">
+            <h2>Featured Work</h2>
+          </div>
+        </div>
+        <div class="row content-columns">
+          <div class="one-third column">
+            <img src="images/websites.jpg" alt="Screen shot of home page of androscogginbank.com">
+            <h3>Websites</h3>
+            <p>I have worked on many websites throughout my career. I maintain the website for <a href="https://www.androscogginbank.com/" target="_blank" title="Link to www.androscogginbank.com">Androscoggin Bank</a>. Currently, I am redesigning and developing our Intranet.</p>
+          </div>
+          <div class="one-third column">
+            <img src="images/paintings.jpg" alt="Close-up of painting of Irish immigrant">
+            <h3>Paintings</h3>
+            <p>I enjoy painting historical subjects, particularly mill workers and immigrants. I have a very unique painting method which employs sand and iron oxide.</p>
+          </div>
+          <div class="one-third column">
+            <img src="images/graphics.jpg" alt="Mock-up of running shirt design">
+            <h3>Graphics</h3>
+            <p>I enjoy graphic design. Each year I design a running shirt to be worn by Androscoggin Bank's Dempsey Challenge Team. Each year's shirt is different and much coveted.</p>
+          </div>
+        </div>
+      </section>
+      <footer class="row">
+        <div class="six columns">
+          <p>4 Hartley Street #5<br>Lewiston, ME 04240</p>
+        </div>
+        <div class="six columns footer-right">
+          <p>(207) 754-4930<br>rayamichaud@twc.com</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
