@@ -1,16 +1,15 @@
 {
   "name": "fend-p2",
-  "description": "",
-  "main": "",
-  "moduleType": [],
+  "version": "1.0.0",
+  "authors": [
+    "Ray Michaud"
+  ],
+  "description": "An element to provide a standard footer for portfolio project.",
+  "main": "elements/standard-footer.html",
   "license": "MIT",
   "homepage": "",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "/.*",
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
