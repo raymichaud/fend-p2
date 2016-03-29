@@ -294,7 +294,7 @@ h6 {
   }
 
   h3 {
-    font-size: 3.6rem;
+    font-size: 3.0rem; /* changed from 3.6rem RAY 3/28/16*/
   }
 
   h4 {
@@ -636,6 +636,10 @@ img {
   fill: #de773f
 }
 
+svg * {
+  max-width: 115px;
+}
+
 .title {
   text-align: right;
 }
@@ -643,6 +647,22 @@ img {
 .header {
   border-bottom: 5px solid #715f5b;
   margin: 20px 0;
+}
+
+/* Adjust header row for Nexus 5X - added by RAY 3/28/16 */
+@media (min-width: 411px) and (max-width: 549px) {
+  .logo {
+    width: 25%;
+  }
+
+  .title {
+    width: 75%;
+  }
+  
+  h3 {
+    font-size: 2.2rem;
+  }
+  
 }
 
 /* Hero Section Styles */
@@ -666,3 +686,12 @@ footer p {
 .footer-right {
   text-align: right;
 }
+
+/* Adjust footer text to center when columns break @ 550px */
+@media (max-width: 549px) {
+  footer,
+  .footer-right {
+    text-align: center;
+  }
+}
+
