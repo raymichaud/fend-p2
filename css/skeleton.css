@@ -224,10 +224,7 @@ html {
 }
 
 body {
-  font-size: 1.7rem; /* changed from 1.5em 3/25/16 RAY */
-  line-height: 1.5; /* changed from 1.6 3/25/16 RAY */
-  font-weight: 400;
-  font-family: "Average Sans", Arial, sans-serif; /* changed from "Raleway" 3/25/16 RAY */
+  font: 400 1.7rem/1.5 "Average Sans", Arial, sans-serif; /* changed from original values 3/25/16 RAY */
   color: #715f5b; /* changed from #222 3/25/16 RAY */
   margin: 0; /* added 3/25/16 RAY */
 }
@@ -240,8 +237,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 1rem; /* changed from 2rem */
+  margin: 0 0 1rem 0; /* changed from 2rem */
   font-weight: 400; /* changed from 300 */
   font-family: "Fjalla One", Arial, sans-serif; /* added 3/25/16 RAY */
   color: #98847f; /* added 3/25/16 RAY */
@@ -636,8 +632,9 @@ img {
   fill: #de773f
 }
 
-svg * {
+svg {
   max-width: 115px;
+  min-width: 75px;
 }
 
 .title {
@@ -649,8 +646,8 @@ svg * {
   margin: 20px 0;
 }
 
-/* Adjust header row for Nexus 5X - added by RAY 3/28/16 */
-@media (min-width: 411px) and (max-width: 549px) {
+/* Adjust header row elements for Nexus 5X so othat columns don't break - added by RAY 3/28/16 */
+@media (max-width: 549px) {
   .logo {
     width: 25%;
   }
