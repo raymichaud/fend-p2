@@ -627,7 +627,12 @@ img {
 }
 
 /*Header Styles*/
-/* .fil0 class is used by the SVG graphic */
+/*
+.fil0 class is used by the SVG graphic
+I moved it here because the style guide says there should be no inline style elements.
+However, the css doesn't validate because the "fill" property doesn't exist. But it is
+a valid property for an inline svg element and it does work from here, so I left it.
+*/
 .fil0 {
   fill: #de773f
 }
@@ -646,7 +651,7 @@ svg {
   margin: 20px 0;
 }
 
-/* Adjust header row elements for Nexus 5X so othat columns don't break - added by RAY 3/28/16 */
+/* Adjust header row elements for Nexus 5X so that columns don't break - added by RAY 3/28/16 */
 @media (max-width: 549px) {
   .logo {
     width: 25%;
